@@ -3,19 +3,18 @@
 import React, { useRef, useState, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
 
-const CYCLES_PER_LETTER = 2;
-const SHUFFLE_TIME = 15;
-const CHARS = "!@#$%^&*():{};|,.<>/?";
+const CYCLES_PER_LETTER = 2;  // Number of cycles before settling on the correct letter
+const SHUFFLE_TIME = 20;       // Time interval for scrambling characters
+const CHARS = "!@#$%^&*():{};|,.<>/?"; // Characters used for scrambling
 
 type Props = {
-  children: string;
+  children: string;           // The text to be scrambled and then revealed
 };
 
 const ScrambleText: React.FC<Props> = ({ children }) => {
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
-  const TARGET_TEXT = children;
-
-  const [text, setText] = useState(TARGET_TEXT);
+  const TARGET_TEXT = children;   // Original text
+  const [text, setText] = useState(""); // State to hold the scrambled text
   const [isInView, setIsInView] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: false });
@@ -24,9 +23,16 @@ const ScrambleText: React.FC<Props> = ({ children }) => {
     if (inView) {
       setIsInView(true);
       scramble(); // Start scrambling when in view
+
+      // Stop scrambling and set the final text after scrambling is done
+      const timeout = setTimeout(() => {
+        stopScramble();
+      }, TARGET_TEXT.length * CYCLES_PER_LETTER * SHUFFLE_TIME);
+
+      return () => clearTimeout(timeout); // Cleanup on unmount
     } else {
       stopScramble(); // Stop scrambling when out of view
-      setText(TARGET_TEXT); // Reset text
+      setText(""); // Reset text to blank if not in view
     }
   }, [inView]); // Re-run when inView changes
 
@@ -58,17 +64,16 @@ const ScrambleText: React.FC<Props> = ({ children }) => {
 
   const stopScramble = () => {
     clearInterval(intervalRef.current as NodeJS.Timeout);
-    setText(TARGET_TEXT);
+    setText(TARGET_TEXT); // Set text to the final correct value
   };
 
   return (
     <motion.div
       ref={ref}
       className="relative overflow-hidden"
-      
     >
       <div className="relative z-10 flex items-center gap-2">
-        <span>{text}</span>
+        <span>{text || '!@#$gdfg%!as@#%!@'}</span> {/* Show 'Loading...' while scrambling */}
       </div>
     </motion.div>
   );

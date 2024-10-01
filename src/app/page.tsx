@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <Layout>
       <Hero />
-      <div className="py-[25vh]"></div>
+      <div className="py-[100vh]"></div>
     </Layout>
   );
 }
