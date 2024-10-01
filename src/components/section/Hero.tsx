@@ -1,8 +1,11 @@
+"use client";
+
 import React from "react";
 import CustomContainer from "../custom/customContainer";
 import Image from "next/image";
 import ButtonComponent from "../contact-button";
 import ScrambleText from "../ScrambleText";
+import { Typewriter } from 'react-simple-typewriter'
 
 const Hero = () => {
   return (
@@ -11,9 +14,20 @@ const Hero = () => {
         <div>
           <div>
             <h1 className="font-medium font-ubuntu text-[48px] tracking-[6.24px] mb-[12px]">
-              ALIFLIKES<span className="text-customBlue">CODING</span>_
+              ALIFLIKES<span className="text-customBlue"><Typewriter
+            words={['Coding', 'Designing', 'Repeat!']}
+            loop={0}
+            cursor
+            cursorStyle='_'
+            cursorColor="#282825"
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
+            
+          /></span>
             </h1>
           </div>
+          
           <div className="">
             <div className="inline-block mb-[75px]">
               <Image
