@@ -2,6 +2,7 @@ import React from "react";
 import CustomContainer from "../custom/customContainer";
 import Image from "next/image";
 import ButtonComponent from "../contact-button";
+import ScrambleText from "../ScrambleText";
 
 const Hero = () => {
   return (
@@ -26,7 +27,9 @@ const Hero = () => {
             </div>
             <div className="inline-block ml-[27px]">
               <h2 className="font-medium font-roboto font-normal text-[32px] leading-[48px]">
+                <ScrambleText>
                 Frontend Developer and UI/UX designer.
+                </ScrambleText>
               </h2>
               <p className="max-w-[550px] text-[18px] leading-[165%] mb-[12px]">
                 Hi my name is Alif Wibowo, I design and build beautiful websites
