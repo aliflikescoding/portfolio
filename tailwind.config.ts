@@ -10,7 +10,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
-			fonts: {
+			fontFamily: {
 				ubuntu: ["Ubuntu", "sans-serif"],
         roboto: ["Roboto", "sans-serif"],
 			},
