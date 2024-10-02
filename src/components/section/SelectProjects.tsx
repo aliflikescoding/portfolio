@@ -11,8 +11,8 @@ import Link from "next/link";
 
 const SelectProjects = () => {
   const variants = {
-    hidden: { opacity: 0, y: 20 }, // Initially hidden
-    visible: { opacity: 1, y: 0 }, // Visible state
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
   };
 
   return (

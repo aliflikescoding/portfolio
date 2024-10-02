@@ -22,7 +22,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
   liveLink,
   codeLink,
-  slugLink,
   imageLink,
 }) => {
   const variants = {
@@ -37,7 +36,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       variants={variants}
       transition={{ duration: 0.6, delay: 0.3 }}
       className="cursor-pointer"
-      onClick={() => (window.location.href = slugLink || "#")} // This makes the card clickable
     >
       <div
         className="
@@ -82,15 +80,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </div>
           </div>
         </div>
-        <div className="max-w-[50%] ml-[15px] flex items-center justify-center ">
-          <Image
-            src={`${imageLink}`}
-            alt="arrow vector"
-            width="0"
-            height="0"
-            sizes="100vw"
-            className="w-auto rounded-3xl h-auto"
-          />
+        <div className="max-w-[50%] ml-[15px] relative flex items-center justify-center">
+          <div className="relative group">
+            <Image
+              src={`${imageLink}`}
+              alt="Project Image"
+              width="0"
+              height="0"
+              sizes="100vw"
+              className="w-auto rounded-3xl h-auto"
+            />
+          </div>
         </div>
       </div>
     </motion.div>
