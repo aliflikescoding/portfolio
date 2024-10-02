@@ -63,7 +63,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             {used.length > 0 &&
               used.map((tech, index) => <UsePill text={`${tech}`} key={index} />)}
           </div>
-          <p className="max-w-[550px] text-[18px] leading-[165%] mb-[12px] mb-[25px]">
+          <p className="max-w-[550px] text-[18px] leading-[165%] mb-[25px]">
             {description}
           </p>
           <div className="flex">
