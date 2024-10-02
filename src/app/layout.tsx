@@ -13,6 +13,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.svg" /> {/* Add this line for favicon */}
+      </head>
       <body className="bg-customCream text-customBlack font-poppins">
         {children}
       </body>
