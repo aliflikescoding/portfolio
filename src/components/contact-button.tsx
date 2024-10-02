@@ -28,6 +28,8 @@ const ButtonComponent: React.FC<ButtonComponentProp> = ({type, children}) => {
     flex
     justify-center
     items-center
+    border-2
+    border-customBlack
     ${type === "primary" ? "bg-customBlue" : "bg-customPink"}
     `}>
       {children}

@@ -8,7 +8,7 @@ interface UsePillProp {
 
 const UsePill: React.FC<UsePillProp> = ({text}) => {
   return (
-    <div className="bg-customRed capitalize text-customWhite rounded-full px-[10px] py-[5px] inline-block">
+    <div className="bg-customRed border-2 border-customBlack capitalize text-customBlack rounded-full px-[10px] py-[5px] inline-block">
       {text}
     </div>
   )

@@ -35,7 +35,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       whileInView="visible"
       variants={variants}
       transition={{ duration: 0.6, delay: 0.3 }}
-      className="cursor-pointer"
     >
       <div
         className="
@@ -53,6 +52,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         capitalize
         bg-customYellow
         flex
+        border-2
+        border-customBlack
         "
       >
         <div className="max-w-[50%]">
@@ -81,14 +82,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </div>
         </div>
         <div className="max-w-[50%] ml-[15px] relative flex items-center justify-center">
-          <div className="relative group">
+          <div className="relative group ">
             <Image
               src={`${imageLink}`}
               alt="Project Image"
               width="0"
               height="0"
               sizes="100vw"
-              className="w-auto rounded-3xl h-auto"
+              className="w-auto rounded-3xl h-auto border-2 border-customBlack"
             />
           </div>
         </div>
