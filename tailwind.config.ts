@@ -20,7 +20,8 @@ const config: Config = {
 				customPink : "#E86AE1",
 				customCream : "#FDF4EE",
 				customWhite : "#F9F5F2",
-				customBlack : "#282825"
+				customBlack : "#282825",
+        customYellow: "#F7D65F"
       },
     },
   },

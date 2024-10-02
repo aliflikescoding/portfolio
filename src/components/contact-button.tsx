@@ -25,8 +25,9 @@ const ButtonComponent: React.FC<ButtonComponentProp> = ({type, children}) => {
     active:translate-x-2 
     active:translate-y-2 
     active:shadow-none
-    inline-block
-    capitalize
+    flex
+    justify-center
+    items-center
     ${type === "primary" ? "bg-customBlue" : "bg-customPink"}
     `}>
       {children}

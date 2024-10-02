@@ -92,7 +92,7 @@ const Hero = () => {
               whileInView="visible"
               variants={variants}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="ml-[98px] mt-[45px]"
+              className="ml-[98px] mt-[45px] flex items-center"
             >
               <ButtonComponent type="primary">get in touch</ButtonComponent>
               <div className="ml-[35px] inline-block">
