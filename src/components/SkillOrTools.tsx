@@ -24,7 +24,7 @@ const SkillsOrTools: React.FC<SkillsOrToolsProps> = ({ title, images }) => {
           whileInView="visible"
           variants={variants}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="flex pt-[30px] items-center gap-[30px]"
+          className="flex flex-wrap pt-[30px] items-center gap-[30px]"
         >
           <Image
             src="/vectorarrow.svg"
@@ -32,7 +32,7 @@ const SkillsOrTools: React.FC<SkillsOrToolsProps> = ({ title, images }) => {
             width="0"
             height="0"
             sizes="100vw"
-            className="w-auto h-auto"
+            className="w-auto h-auto hidden lg:block"
           />
           {images.map((image, index) => (
             <Image
