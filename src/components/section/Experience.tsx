@@ -21,7 +21,7 @@ const Experience = () => {
             whileInView="visible"
             variants={variants}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="font-bold font-ubuntu text-[64px] lining-[74px]"
+            className="font-bold font-ubuntu my-9 text-[48px] sm:text-[64px] lining-[74px]"
           >
             Experience
           </motion.h1>
@@ -43,7 +43,7 @@ const Experience = () => {
             whileInView="visible"
             variants={variants}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="font-bold font-ubuntu my-[25px] text-[32px] lining-[74px]"
+            className="font-bold font-ubuntu my-[12.5px] sm:my-[25px] text-[28px] sm:text-[32px] lining-[30px] sm:lining-[74px]"
           >
             Personal Freelance Experience
           </motion.h2>

@@ -46,11 +46,11 @@ const ExperienceText: React.FC<ExperienceTextProp> = ({
             className="w-auto h-auto"
           />
         </div>
-        <div className="ml-[30px]">
-          <h2 className="font-light text-[24px] mb-[8px] capitalize">
+        <div className="ml-[10px] sm:ml-[30px]">
+          <h2 className="font-light text-[20px] sm:text-[24px] mb-[8px] capitalize">
             {timeline}
           </h2>
-          <h2 className="font-light text-[24px]">
+          <h2 className="font-light text-[20px] sm:text-[24px]">
             {position} -{" "}
             {companyLink ? (
               <Link className="underline" target="_" href={companyLink}>
@@ -62,21 +62,33 @@ const ExperienceText: React.FC<ExperienceTextProp> = ({
           </h2>
         </div>
       </div>
-      <div className="ml-[87px] mt-6">
-        <ul className="list-disc pl-8">
-          {descBullets.length > 0 &&
-            descBullets.map((desc, index) => (
-              <li key={index} className="pl-1 text-indent-[-0.5rem]">
-                {desc}
-              </li>
-            ))}
-        </ul>
-        <div className="mt-[20px]">
-          <div className="flex flex-wrap gap-[5px] my-[15px]">
-            {used.length > 0 &&
-              used.map((tech, index) => (
-                <UsePill text={`${tech}`} key={index} />
+      <div className="flex">
+        <div className="opacity-0">
+          <Image
+            src="/vectorarrow.svg"
+            alt="arrow vector"
+            width="0"
+            height="0"
+            sizes="100vw"
+            className="w-auto h-auto"
+          />
+        </div>
+        <div className="ml-[30px] my-6">
+          <ul className="list-disc">
+            {descBullets.length > 0 &&
+              descBullets.map((desc, index) => (
+                <li key={index} className="pl-1 text-[15px] sm:text-[18px] max-w-[965px] text-indent-[-0.5rem]">
+                  {desc}
+                </li>
               ))}
+          </ul>
+          <div className="mt-[20px]">
+            <div className="flex flex-wrap gap-[5px] my-[15px]">
+              {used.length > 0 &&
+                used.map((tech, index) => (
+                  <UsePill text={`${tech}`} key={index} />
+                ))}
+            </div>
           </div>
         </div>
       </div>
