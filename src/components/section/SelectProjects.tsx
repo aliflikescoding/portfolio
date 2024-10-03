@@ -49,10 +49,6 @@ const SelectProjects = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="flex justify-center items-center py-10"
           >
-            <ButtonComponent type="primary">
-              View Project List{" "}
-              <FaArrowRight className="inline-block ml-[5px]" />
-            </ButtonComponent>
             <div className="ml-4">
               <Link href="https://github.com/aliflikescoding" target="_">
                 <ButtonComponent type="secondary">
