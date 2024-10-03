@@ -1,33 +1,38 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
 import CustomContainer from "../custom/customContainer";
 import ScrambleText from "../ScrambleText";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 const WhatIDo = () => {
-  const { scrollYProgress } = useScroll();
+  const sectionRef = useRef(null); // Reference for the WhatIDo section scroll
+  const { scrollYProgress } = useScroll({
+    target: sectionRef, // Track scroll on this section
+    offset: ["start end", "end start"], // Adjust based on your layout
+  });
 
-  const xMove1 = useTransform(scrollYProgress, [0, 0.4, 1], [1000, 0, 1000]);
-  const xMove2 = useTransform(scrollYProgress, [0, 0.4, 1], [1100, 0, 1100]);
-  const xMove3 = useTransform(scrollYProgress, [0, 0.4, 1], [1200, 0, 1200]);
-  const xMove4 = useTransform(scrollYProgress, [0, 0.4, 1], [1200, 0, 1200]);
-  const xMove5 = useTransform(scrollYProgress, [0, 0.4, 1], [1300, 0, 1300]);
-  const xMove6 = useTransform(scrollYProgress, [0, 0.4, 1], [1400, 0, 1400]);
-  const xMove7 = useTransform(scrollYProgress, [0, 0.4, 1], [1500, 0, 1500]);
-  const xMove8 = useTransform(scrollYProgress, [0, 0.4, 1], [1600, 0, 1600]);
-  const xMove9 = useTransform(scrollYProgress, [0, 0.4, 1], [1700, 0, 1700]);
-  const xMove10 = useTransform(scrollYProgress, [0, 0.4, 1], [1800, 0, 1800]);
-  const xMove11 = useTransform(scrollYProgress, [0, 0.4, 1], [1900, 0, 1900]);
+  // Apply transformations based on section scroll
+  const xMove1 = useTransform(scrollYProgress, [0, 0.5, 1], [1000, 0, 1000]);
+  const xMove2 = useTransform(scrollYProgress, [0, 0.5, 1], [1100, 0, 1100]);
+  const xMove3 = useTransform(scrollYProgress, [0, 0.5, 1], [1200, 0, 1200]);
+  const xMove4 = useTransform(scrollYProgress, [0, 0.5, 1], [1200, 0, 1200]);
+  const xMove5 = useTransform(scrollYProgress, [0, 0.5, 1], [1300, 0, 1300]);
+  const xMove6 = useTransform(scrollYProgress, [0, 0.5, 1], [1400, 0, 1400]);
+  const xMove7 = useTransform(scrollYProgress, [0, 0.5, 1], [1500, 0, 1500]);
+  const xMove8 = useTransform(scrollYProgress, [0, 0.5, 1], [1600, 0, 1600]);
+  const xMove9 = useTransform(scrollYProgress, [0, 0.5, 1], [1700, 0, 1700]);
+  const xMove10 = useTransform(scrollYProgress, [0, 0.5, 1], [1800, 0, 1800]);
+  const xMove11 = useTransform(scrollYProgress, [0, 0.5, 1], [1900, 0, 1900]);
 
   const variants = {
-    hidden: { opacity: 0, y: 20 }, // Initially hidden
-    visible: { opacity: 1, y: 0 }, // Visible state
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
   };
 
   return (
-    <section className="pb-[150px] relative overflow-hidden">
+    <section ref={sectionRef} className="pb-[150px] relative overflow-hidden">
       <CustomContainer>
         <div>
           <motion.h1
@@ -112,7 +117,10 @@ const WhatIDo = () => {
           </div>
         </div>
       </CustomContainer>
-      <motion.div className="absolute right-[45%] top-[13%]" style={{ x: xMove11 }}>
+      <motion.div
+        className="absolute right-[45%] top-[13%]"
+        style={{ x: xMove11 }}
+      >
         <Image
           src="/whatido/whatido10.svg"
           alt="hero svg"
