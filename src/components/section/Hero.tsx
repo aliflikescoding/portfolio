@@ -95,7 +95,9 @@ const Hero = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="ml-[98px] mt-[45px] flex items-center"
             >
-              <ButtonComponent type="primary">get in touch</ButtonComponent>
+              <Link href="mailto:alif.likes.coding@gmail.com">
+                <ButtonComponent type="primary">get in touch</ButtonComponent>
+              </Link>
               <Link href="/resume.pdf" target="_" download="Alif Wibowo Resume">
                 <div className="ml-[35px] inline-block">
                   <ButtonComponent type="secondary">get resume</ButtonComponent>
