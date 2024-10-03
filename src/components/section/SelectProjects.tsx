@@ -5,7 +5,7 @@ import CustomContainer from "../custom/customContainer";
 import { motion } from "framer-motion";
 import ProjectCard from "../ProjectsCard";
 import ButtonComponent from "../contact-button";
-import { FaGithub, FaArrowRight } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { selectedProjects } from "@/app/data";
 import Link from "next/link";
 
@@ -16,7 +16,7 @@ const SelectProjects = () => {
   };
 
   return (
-    <section>
+    <section id="projects">
       <CustomContainer>
         <div>
           <motion.h1

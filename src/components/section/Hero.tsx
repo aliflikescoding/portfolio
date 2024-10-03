@@ -31,7 +31,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="py-[25vh] relative overflow-hidden">
+    <section id="about" className="py-[25vh] relative overflow-hidden">
       <CustomContainer>
         <div>
           <div>

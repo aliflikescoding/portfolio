@@ -13,7 +13,7 @@ const Experience = () => {
   };
 
   return (
-    <section className="mb-[150px]">
+    <section id="experience" className="mb-[150px]">
       <CustomContainer>
         <div>
           <motion.h1

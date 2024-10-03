@@ -9,7 +9,7 @@ const Header = () => {
     <section>
       <CustomContainer>
         <div className="py-[30px] flex justify-between items-center">
-          <Link href="">
+          <Link href="/">
             <Image
               src="/logo.svg"
               alt="logo"
@@ -20,13 +20,13 @@ const Header = () => {
             />
           </Link>
           <div className="flex gap-[45px]">
-            <NavLink link="">
+            <NavLink link="#about">
               About
             </NavLink>
-            <NavLink link="">
+            <NavLink link="#experience">
               Experience
             </NavLink>
-            <NavLink link="">
+            <NavLink link="#projects">
               Selected Projects
             </NavLink>
           </div>
