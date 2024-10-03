@@ -7,6 +7,7 @@ import ButtonComponent from "../contact-button";
 import ScrambleText from "../ScrambleText";
 import { Typewriter } from "react-simple-typewriter";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Link from "next/link";
 
 const Hero = () => {
   const { scrollYProgress } = useScroll();
@@ -95,9 +96,11 @@ const Hero = () => {
               className="ml-[98px] mt-[45px] flex items-center"
             >
               <ButtonComponent type="primary">get in touch</ButtonComponent>
-              <div className="ml-[35px] inline-block">
-                <ButtonComponent type="secondary">get resume</ButtonComponent>
-              </div>
+              <Link href="/resume.pdf" target="_" download="Alif Wibowo Resume">
+                <div className="ml-[35px] inline-block">
+                  <ButtonComponent type="secondary">get resume</ButtonComponent>
+                </div>
+              </Link>
             </motion.div>
           </div>
         </div>
