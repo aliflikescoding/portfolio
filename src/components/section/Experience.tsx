@@ -45,7 +45,7 @@ const Experience = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="font-bold font-ubuntu my-[25px] text-[32px] lining-[74px]"
           >
-            Personal Project Experience
+            Personal Freelance Experience
           </motion.h2>
           <div>
             {personalFreelance.map((exp) => (
