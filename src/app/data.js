@@ -41,7 +41,7 @@ export const selectedProjects = [
   },
   {
     id: 4,
-    title: "Vanilla To Do List",
+    title: "Chat App - Landing Page",
     used: ["Webflow", "Web Design"],
     description: "This is a homepage design and build for a concept project – a chat application. I designed the page first then built a responsive web page using Webflow.",
     imageLink: "/project-thumbnails/webflowchatapp.png",
@@ -107,7 +107,7 @@ export const personalFreelance = [
   },
   {
     id: 3,
-    timeline: "jul 2024 - aug 2024",
+    timeline: "2 days",
     position: "Frontend Developer",
     companyName: "Blood Bank Project",
     companyLink: "https://blood-bank-project-inky.vercel.app/",
