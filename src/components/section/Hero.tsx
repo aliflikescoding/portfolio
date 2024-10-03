@@ -31,11 +31,14 @@ const Hero = () => {
   };
 
   return (
-    <section id="about" className="py-[25vh] relative overflow-hidden">
+    <section
+      id="about"
+      className="py-[15vh] sm:py-[25vh] mt-[150px] relative overflow-hidden"
+    >
       <CustomContainer>
         <div>
           <div>
-            <h1 className="font-medium uppercase font-ubuntu text-[48px] tracking-[6.24px] mb-[12px]">
+            <h1 className="font-medium uppercase font-ubuntu text-4xl  sm:text-5xl tracking-[6.24px] mb-[12px] flex md:flex-row flex-col">
               ALIFLIKES
               <span className="text-customBlue">
                 <Typewriter
@@ -51,14 +54,13 @@ const Hero = () => {
               </span>
             </h1>
           </div>
-
           <div className="">
             <motion.div
               initial="hidden"
               whileInView="visible"
               variants={variants}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="inline-block mb-[75px]"
+              className="hidden md:inline-block mb-[75px]"
             >
               <Image
                 src="/vectorarrow.svg"
@@ -69,14 +71,14 @@ const Hero = () => {
                 className="w-auto h-auto"
               />
             </motion.div>
-            <div className="inline-block ml-[27px]">
-              <h2 className="font-medium font-roboto font-normal text-[32px] leading-[48px]">
+            <div className="inline-block md:ml-[27px]">
+              <h2 className="font-roboto font-normal my-2 text-[25px]  sm:text-[32px] leading-[48px]">
                 <ScrambleText>
                   Frontend Developer and UI/UX designer.
                 </ScrambleText>
               </h2>
               <motion.p
-                className="max-w-[550px] text-[18px] leading-[165%] mb-[12px]"
+                className="max-w-[550px] text-[15px] sm:text-[18px] leading-[165%] mb-[12px]"
                 initial="hidden"
                 whileInView="visible"
                 variants={variants}
@@ -93,15 +95,13 @@ const Hero = () => {
               whileInView="visible"
               variants={variants}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="ml-[98px] mt-[45px] flex items-center"
+              className="sm:ml-[98px] mt-[20px] sm:mt-[45px] flex flex-col sm:flex-row gap-5 items-center"
             >
               <Link href="mailto:alif.likes.coding@gmail.com">
                 <ButtonComponent type="primary">get in touch</ButtonComponent>
               </Link>
               <Link href="/resume.pdf" target="_" download="Alif Wibowo Resume">
-                <div className="ml-[35px] inline-block">
-                  <ButtonComponent type="secondary">get resume</ButtonComponent>
-                </div>
+                <ButtonComponent type="secondary">get resume</ButtonComponent>
               </Link>
             </motion.div>
           </div>
@@ -111,7 +111,7 @@ const Hero = () => {
       {/* Hero SVGs with scroll-based movement */}
       <motion.div
         style={{ x: xMove1 }}
-        className="absolute right-[30%] top-[14%]"
+        className="z-[-10] absolute right-[50%] md:right-[30%] top-[14%]"
         initial={{ x: 1000, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
@@ -122,12 +122,12 @@ const Hero = () => {
           width="0"
           height="0"
           sizes="100vw"
-          className="w-auto h-auto"
+          className="opacity-60 md:opacity-80 xl:opacity-100 w-auto h-auto"
         />
       </motion.div>
       <motion.div
         style={{ x: xMove2 }}
-        className="absolute right-[29%] top-[30%]"
+        className="z-[-10] absolute right-[29%] top-[30%]"
         initial={{ x: 1100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
@@ -138,12 +138,12 @@ const Hero = () => {
           width="0"
           height="0"
           sizes="100vw"
-          className="w-auto h-auto"
+          className="opacity-60 md:opacity-80 xl:opacity-100 w-auto h-auto"
         />
       </motion.div>
       <motion.div
         style={{ x: xMove3 }}
-        className="absolute right-[34%] top-[40%]"
+        className="z-[-10] absolute right-[75%] top-[40%]"
         initial={{ x: 1200, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
@@ -154,12 +154,12 @@ const Hero = () => {
           width="0"
           height="0"
           sizes="100vw"
-          className="w-auto h-auto"
+          className="opacity-60 md:opacity-80 xl:opacity-100 w-auto h-auto"
         />
       </motion.div>
       <motion.div
         style={{ x: xMove4 }}
-        className="absolute right-[40%] top-[52%]"
+        className="z-[-10] absolute right-[40%] top-[52%]"
         initial={{ x: 1300, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
@@ -170,12 +170,12 @@ const Hero = () => {
           width="0"
           height="0"
           sizes="100vw"
-          className="w-auto h-auto"
+          className="opacity-60 md:opacity-80 xl:opacity-100 w-auto h-auto"
         />
       </motion.div>
       <motion.div
         style={{ x: xMove5 }}
-        className="absolute right-[27%] top-[58%]"
+        className="z-[-10] absolute right-[80%] md:right-[27%] top-[58%]"
         initial={{ x: 1400, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
@@ -186,13 +186,13 @@ const Hero = () => {
           width="0"
           height="0"
           sizes="100vw"
-          className="w-auto h-auto"
+          className="opacity-60 md:opacity-80 xl:opacity-100 w-auto h-auto"
         />
       </motion.div>
 
       <motion.div
         style={{ x: xMove6 }}
-        className="absolute right-[35%] top-[65%]"
+        className="z-[-10] absolute right-[35%] top-[85%] md:top-[65%]"
         initial={{ x: 1500, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
@@ -203,12 +203,12 @@ const Hero = () => {
           width="0"
           height="0"
           sizes="100vw"
-          className="w-auto h-auto"
+          className="opacity-60 md:opacity-80 xl:opacity-100 w-auto h-auto"
         />
       </motion.div>
       <motion.div
         style={{ x: xMove7 }}
-        className="absolute right-[15%] top-[60%]"
+        className="z-[-10] absolute right-[10%] md:right-[15%] top-[60%]"
         initial={{ x: 1700, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
@@ -219,12 +219,12 @@ const Hero = () => {
           width="0"
           height="0"
           sizes="100vw"
-          className="w-auto h-auto"
+          className="opacity-60 md:opacity-80 xl:opacity-100 w-auto h-auto"
         />
       </motion.div>
       <motion.div
         style={{ x: xMove8 }}
-        className="absolute right-[20%] top-[17%]"
+        className="z-[-10] absolute right-[20%] top-[17%]"
         initial={{ x: 1800, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
@@ -235,12 +235,12 @@ const Hero = () => {
           width="0"
           height="0"
           sizes="100vw"
-          className="w-auto h-auto"
+          className="opacity-60 md:opacity-80 xl:opacity-100 w-auto h-auto"
         />
       </motion.div>
       <motion.div
         style={{ x: xMove9 }}
-        className="absolute right-[20%] top-[40%]"
+        className="z-[-10] absolute right-[12.5%] md:right-[20%] top-[40%]"
         initial={{ x: 1800, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
@@ -251,12 +251,12 @@ const Hero = () => {
           width="0"
           height="0"
           sizes="100vw"
-          className="w-auto h-auto"
+          className="opacity-60 md:opacity-80 xl:opacity-100 w-auto h-auto"
         />
       </motion.div>
       <motion.div
         style={{ x: xMove10 }}
-        className="absolute right-[45%] top-[10%]"
+        className="z-[-10] absolute right-[80%] md:right-[45%] top-[10%]"
         initial={{ x: 1900, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
@@ -267,12 +267,12 @@ const Hero = () => {
           width="0"
           height="0"
           sizes="100vw"
-          className="w-auto h-auto"
+          className="opacity-60 md:opacity-80 xl:opacity-100 w-auto h-auto"
         />
       </motion.div>
       <motion.div
         style={{ x: xMove11 }}
-        className="absolute right-[40%] top-[20%]"
+        className="z-[-10] absolute right-[70%] md:right-[40%] top-[20%]"
         initial={{ x: 2000, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
@@ -283,7 +283,7 @@ const Hero = () => {
           width="0"
           height="0"
           sizes="100vw"
-          className="w-auto h-auto"
+          className="opacity-60 md:opacity-80 xl:opacity-100 w-auto h-auto"
         />
       </motion.div>
     </section>
