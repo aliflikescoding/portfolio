@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <section className="border-t-[2px] border-customBlack">
       <CustomContainer>
-        <div className="py-14 flex justify-between items-center">
+        <div className="py-5 sm:py-14 flex flex-col-reverse gap-4 sm:flex-row justify-between items-center">
           <div className="flex items-center">
             <Image
               src="/logo.svg"
@@ -18,7 +18,7 @@ const Footer = () => {
               sizes="100vw"
               className="w-auto h-auto max-w-[100px]"
             />
-            <div className="ml-2 tracking-[2.5px]">
+            <div className="ml-2 tracking-[1px] sm:tracking-[2.5px]">
               <h6>Aliflikescoding</h6>
               <h6>© Copyright - 2024</h6>
             </div>
