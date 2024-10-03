@@ -143,7 +143,7 @@ const Hero = () => {
       </motion.div>
       <motion.div
         style={{ x: xMove3 }}
-        className="z-[-10] absolute right-[75%] top-[40%]"
+        className="z-[-10] absolute right-[75%] sm:right-[35%] top-[40%]"
         initial={{ x: 1200, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
