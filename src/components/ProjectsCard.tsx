@@ -38,8 +38,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     >
       <div
         className="
-        px-10 
-        py-8
+        p-5
+        sm:px-10 
+        sm:py-8
         rounded-3xl 
         shadow-[7px_7px_0_rgb(0,0,0)] 
         transition-all 
@@ -51,37 +52,40 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         active:shadow-none
         capitalize
         bg-customYellow
-        flex
         border-2
         border-customBlack
+        flex
+        lg:flex-row
+        flex-col-reverse
+        items-center
         "
       >
-        <div className="max-w-[50%]">
-          <h4 className="text-[32px] font-medium">{title}</h4>
-          <div className="flex gap-[5px] my-[15px]">
+        <div className="lg:max-w-[50%]">
+          <h4 className="text-[28px] sm:text-[32px] font-medium">{title}</h4>
+          <div className="flex flex-wrap gap-[5px] my-[15px]">
             {used.length > 0 &&
-              used.map((tech, index) => <UsePill text={`${tech}`} key={index} />)}
+              used.map((tech, index) => (
+                <UsePill text={`${tech}`} key={index} />
+              ))}
           </div>
-          <p className="max-w-[550px] text-[18px] leading-[165%] mb-[25px]">
+          <p className="max-w-[550px] text-[15px] sm:text-[18px] leading-[165%] mb-[25px]">
             {description}
           </p>
-          <div className="flex">
+          <div className="flex sm:flex-row flex-col gap-[15px] items-center">
             <Link href={liveLink || "#"} target="_blank">
               <ButtonComponent type="primary">
                 View Live{" "}
                 <FaExternalLinkAlt className="inline-block ml-[5px]" />
               </ButtonComponent>
             </Link>
-            <div className="inline-block ml-[15px]">
-              <Link href={codeLink || "#"} target="_blank">
-                <ButtonComponent type="secondary">
-                  View Code <FaGithub className="inline-block ml-[5px]" />
-                </ButtonComponent>
-              </Link>
-            </div>
+            <Link href={codeLink || "#"} target="_blank">
+              <ButtonComponent type="secondary">
+                View Code <FaGithub className="inline-block ml-[5px]" />
+              </ButtonComponent>
+            </Link>
           </div>
         </div>
-        <div className="max-w-[50%] ml-[15px] relative flex items-center justify-center">
+        <div className="lg:max-w-[50%] lg:ml-[15px] relative flex items-center justify-center">
           <div className="relative group ">
             <Image
               src={`${imageLink}`}

@@ -24,7 +24,7 @@ const SelectProjects = () => {
             whileInView="visible"
             variants={variants}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="font-bold font-ubuntu text-[64px] lining-[74px]"
+            className="font-bold font-ubuntu text-[48px] sm:text-[64px] lining-[74px]"
           >
             Selected Projects
           </motion.h1>
