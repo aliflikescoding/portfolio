@@ -28,16 +28,16 @@ const Header = () => {
               width="0"
               height="0"
               sizes="100vw"
-              className="w-[125px] md:w-[150px] h-auto"
+              className="w-[125px] lg:w-[150px] h-auto"
             />
           </Link>
-          <div className="hidden md:flex gap-[45px]">
+          <div className="hidden lg:flex gap-[45px]">
             <NavLink link="/#about">About</NavLink>
             <NavLink link="/#experience">Experience</NavLink>
             <NavLink link="/#projects">Featured Projects</NavLink>
             <NavLink link="/projects">Full Projects</NavLink>
           </div>
-          <div className="boock md:hidden">
+          <div className="block lg:hidden">
             <Sheet>
               <SheetTrigger>
                 <div className="text-4xl font-thin">
