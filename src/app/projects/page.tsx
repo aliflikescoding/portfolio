@@ -6,6 +6,7 @@ import ProjectCard from "@/components/ProjectsCard";
 import { motion } from "framer-motion";
 import { FaHome } from "react-icons/fa";
 import Link from "next/link";
+import { freeLanceProjects, personalOrCourse } from "../data";
 
 export default function Projects() {
   const variants = {
@@ -81,7 +82,7 @@ export default function Projects() {
                 Personal or Course Projects
               </motion.h1>
               <div className="mt-8 flex flex-col gap-8">
-                {personalOrPersonalProjects.map((project) => (
+                {personalOrCourse.map((project) => (
                   <ProjectCard
                     key={project.id}
                     title={project.title}

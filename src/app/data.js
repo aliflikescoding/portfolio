@@ -56,7 +56,7 @@ export const freeLanceProjects = [
   },
 ];
 
-export const personalOrPersonalProjects = [
+export const personalOrCourse = [
   {
     id: 0,
     title: "Shopping Cart Project",
