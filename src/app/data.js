@@ -136,8 +136,8 @@ export const experience = [
     companyName: "iGate2024",
     companyLink: "https://igate.love/",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    used: ["react", "tailwindCSS", "git", "github"],
+      "So far, I’ve developed only the landing page, but it’s packed with animations. I’ve used Tailwind CSS, React.js, and TypeScript, along with Git and GitHub for version control. I’ve also been working closely with the design team and the UI/UX team, providing them with assistance where needed. Once I’ve completed more of the project, I’ll provide updates on what I’ve worked on.",
+    used: ["react", "typescript","tailwindCSS", "git", "github"],
   },
   {
     id: 1,
@@ -146,20 +146,20 @@ export const experience = [
     companyName: "HMIF UNDIP",
     companyLink: "https://www.linkedin.com/company/hmif-undip/mycompany/",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    used: ["react", "SASS", "tailwindCSS", "chakraUI", "git", "github"],
+      "I developed three key pages: the first is a landing page, the second includes a fully functional form with frontend validation that sends data to the backend and includes OTP validation, and the third is a data display page with filtering options. I styled two pages using SASS (scss), one with Tailwind CSS, and another with Chakra UI. Additionally, I styled a login page and the admin panel. I created over five reusable React components, collaborated with a team of four, and utilized Git and GitHub throughout the project.",
+    used: ["react", "SASS", "tailwindCSS", "javascript", "chakraUI", "git", "github"],
   },
 ];
 
 export const personalFreelance = [
   {
     id: 1,
-    timeline: "jul 2024 - aug 2024",
-    position: "Frontend Developer",
+    timeline: "2 months - hours varied per week",
+    position: "Frontend Developer & Web Designer",
     companyName: "Desa Punjulharjo",
     companyLink: "https://desawisatapunjulharjo.com/",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "I developed eight key pages for the project: a landing page with links to other pages, an about page, a destinations page, a videos page, and a blog page. I also styled an admin page and a login page. The location description page includes a carousel, all styled using ShadcnUI. The entire project was styled with Tailwind CSS, and I used ShadcnUI for additional components and interactions. Over ten plus reusable React components were created for this project, ensuring flexibility and scalability. I designed the layout and wireframes in Figma and implemented dynamic routing and slugs using Next.js. Git and GitHub were used for version control throughout the development process.",
     used: [
       "react",
       "tailwindCSS",
@@ -172,14 +172,15 @@ export const personalFreelance = [
   },
   {
     id: 2,
-    timeline: "jul 2024 - aug 2024",
-    position: "Frontend Developer",
+    timeline: "1 Month - Hours Varied Per Week",
+    position: "Frontend Developer & Web Designer",
     companyName: "University Class Bot Booker",
     companyLink: "",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "I developed a total of seven key pages for the project. The first is a landing page featuring carousels, followed by a form page with complete frontend validation and dropdowns. Additionally, I created a login page, a register page, an admin page where scripts can be run with filtering options, a users page, and a payment page that facilitates transactions. The entire project was styled using Tailwind CSS and ShadcnUI. I designed the layout in Figma complete with wire framing beforehand, utilized Git and GitHub for version control, and implemented everything using TypeScript to ensure type safety and maintainability in the React components.",
     used: [
       "react",
+      "typescript",
       "tailwindCSS",
       "shadcnUI",
       "git",
@@ -190,12 +191,12 @@ export const personalFreelance = [
   },
   {
     id: 3,
-    timeline: "2 days",
+    timeline: "1 week - hours varied",
     position: "Frontend Developer",
     companyName: "Blood Bank Project",
     companyLink: "https://blood-bank-project-inky.vercel.app/",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    used: ["react", "chart.JS", "tailwindCSS", "chakraUI", "git", "github"],
+      "I created four pages using Vite and React Router, translating data from a previously designed Figma layout into dynamic content complete with detailed data information using Chart.js. The project was styled with Tailwind CSS and integrated Chakra UI for enhanced user interface components. Throughout the development process, I utilized Git and GitHub for version control, ensuring a smooth and collaborative workflow while leveraging React.js for building the components.",
+    used: ["react", "javasript", "chart.JS", "tailwindCSS", "chakraUI", "git", "github"],
   },
 ];
