@@ -79,7 +79,7 @@ export default function Projects() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="font-bold font-ubuntu text-[48px] sm:text-[48px] lining-[64px]"
               >
-                Personal or Work Projects
+                Personal or Course Projects
               </motion.h1>
               <div className="mt-8 flex flex-col gap-8">
                 {personalOrPersonalProjects.map((project) => (
