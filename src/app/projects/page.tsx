@@ -18,7 +18,7 @@ export default function Projects() {
     <Layout>
       <section className="">
         <CustomContainer>
-          <div className="py-[7.5vh] sm:py-[15vh]">
+          <div className="py-[15vh] sm:py-[20vh]">
             <div className="flex justify-start pt-[30px] sm:pt-[45px]">
             <Link
                   className="

@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/sheet";
 import { FaInfoCircle } from "react-icons/fa";
 import { LuClipboardList } from "react-icons/lu";
-import { FaBox } from "react-icons/fa";
+import { FaBox, FaBoxOpen } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = () => {
@@ -32,9 +32,10 @@ const Header = () => {
             />
           </Link>
           <div className="hidden md:flex gap-[45px]">
-            <NavLink link="#about">About</NavLink>
-            <NavLink link="#experience">Experience</NavLink>
-            <NavLink link="#projects">Selected Projects</NavLink>
+            <NavLink link="/#about">About</NavLink>
+            <NavLink link="/#experience">Experience</NavLink>
+            <NavLink link="/#projects">Featured Projects</NavLink>
+            <NavLink link="/projects">Full Projects</NavLink>
           </div>
           <div className="boock md:hidden">
             <Sheet>
@@ -61,22 +62,28 @@ const Header = () => {
                   </SheetTitle>
                   <div className="flex flex-col p-[7.5vh] gap-5 mx-auto">
                     <Link
-                      href="#about"
+                      href="/#about"
                       className="flex items-center text-xl font-medium shadow-[7px_7px_0_rgb(0,0,0)] p-3 bg-customWhite rounded-3xl border-2 border-customBlack"
                     >
                       <FaInfoCircle className="mr-[5px]" /> About
                     </Link>
                     <Link
-                      href="#experience"
+                      href="/#experience"
                       className="flex items-center text-xl font-medium shadow-[7px_7px_0_rgb(0,0,0)] p-3 bg-customWhite rounded-3xl border-2 border-customBlack"
                     >
                       <LuClipboardList className="mr-[5px]" /> Experience
                     </Link>
                     <Link
-                      href="#projects"
+                      href="/#projects"
                       className="flex items-center text-xl font-medium shadow-[7px_7px_0_rgb(0,0,0)] p-3 bg-customWhite rounded-3xl border-2 border-customBlack"
                     >
-                      <FaBox className="mr-[5px]" /> Selected Projects
+                      <FaBox className="mr-[5px]" /> Featured Projects
+                    </Link>
+                    <Link
+                      href="/projects"
+                      className="flex items-center text-xl font-medium shadow-[7px_7px_0_rgb(0,0,0)] p-3 bg-customWhite rounded-3xl border-2 border-customBlack"
+                    >
+                      <FaBoxOpen className="mr-[5px]" /> Full Projects
                     </Link>
                   </div>
                   <SheetDescription></SheetDescription>

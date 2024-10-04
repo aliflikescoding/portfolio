@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import ProjectCard from "../ProjectsCard";
 import ButtonComponent from "../contact-button";
 import { FaGithub, FaArrowRight } from "react-icons/fa";
-import { freeLanceProjects } from "@/app/data";
+import { featuredProjects } from "@/app/data";
 import Link from "next/link";
 
 const SelectProjects = () => {
@@ -26,10 +26,10 @@ const SelectProjects = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="font-bold font-ubuntu text-[48px] sm:text-[64px] lining-[74px]"
           >
-            Selected Projects
+            Featured Projects
           </motion.h1>
           <div className="mt-8 flex flex-col gap-8">
-            {freeLanceProjects.map((project) => (
+            {featuredProjects.map((project) => (
               <ProjectCard
                 key={project.id}
                 title={project.title}
