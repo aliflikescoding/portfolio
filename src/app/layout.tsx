@@ -16,7 +16,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.svg" /> {/* Add this line for favicon */}
       </head>
-      <body className="bg-customCream text-customBlack font-poppins scroll-smooth">
+      <body className="bg-customCream text-customBlack font-roboto scroll-smooth">
         {children}
       </body>
     </html>

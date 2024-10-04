@@ -5,7 +5,6 @@ import CustomContainer from "@/components/custom/customContainer";
 import ProjectCard from "@/components/ProjectsCard";
 import { motion } from "framer-motion";
 import { FaHome } from "react-icons/fa";
-import { freeLanceProjects, personalOrPersonalProjects } from "../data";
 import Link from "next/link";
 
 export default function Projects() {
