@@ -11,6 +11,9 @@ const ButtonComponent: React.FC<ButtonComponentProp> = ({type, children}) => {
   return (
     <button 
     className={`
+    font-roboto
+    capitalize
+    text-lg
     px-6 
     py-3 
     text-customWhite 
