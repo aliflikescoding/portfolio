@@ -1,4 +1,4 @@
-export const selectedProjects = [
+export const freeLanceProjects = [
   {
     id: 0,
     title: "Shopping Cart Project",
@@ -47,6 +47,19 @@ export const selectedProjects = [
     imageLink: "/project-thumbnails/webflowchatapp.png",
     liveLink: "https://aliflikescoding-team-app.webflow.io/",
     codeLink: "#",
+    slugLink: "#",
+  },
+]
+
+export const personalOrPersonalProjects = [
+  {
+    id: 0,
+    title: "Shopping Cart Project",
+    used: ["react", "tailwindCSS", "reactRouting", "chakraUI"],
+    description: "An assigned project from The Odin Project in this project you are tasked to a basic ecomerce website using the fakestore API, having mutiple pages, and having a shopping cart in the e comerce app. In this project I learned about pulling data from an API, using the useEffect react hook, react routing, using the contextAPI, and styling the side using ChakraUI and TailwindCSS",
+    imageLink: "/project-thumbnails/shoppingcartpict.png",
+    liveLink: "https://shopping-cart-project-inky.vercel.app/",
+    codeLink: "https://github.com/aliflikescoding/react-shopping-cart",
     slugLink: "#",
   },
 ]

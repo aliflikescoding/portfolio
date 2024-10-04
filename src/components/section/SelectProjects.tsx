@@ -5,8 +5,8 @@ import CustomContainer from "../custom/customContainer";
 import { motion } from "framer-motion";
 import ProjectCard from "../ProjectsCard";
 import ButtonComponent from "../contact-button";
-import { FaGithub } from "react-icons/fa";
-import { selectedProjects } from "@/app/data";
+import { FaGithub, FaArrowRight } from "react-icons/fa";
+import { freeLanceProjects } from "@/app/data";
 import Link from "next/link";
 
 const SelectProjects = () => {
@@ -29,7 +29,7 @@ const SelectProjects = () => {
             Selected Projects
           </motion.h1>
           <div className="mt-8 flex flex-col gap-8">
-            {selectedProjects.map((project) => (
+            {freeLanceProjects.map((project) => (
               <ProjectCard
                 key={project.id}
                 title={project.title}
@@ -47,15 +47,18 @@ const SelectProjects = () => {
             whileInView="visible"
             variants={variants}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="flex justify-center items-center py-10"
+            className="flex flex-col sm:flex-row gap-3 justify-center items-center py-10"
           >
-            <div className="ml-4">
+            <Link href="/projects">
+                <ButtonComponent type="primary">
+                  View Full Project List  <FaArrowRight className="inline-block ml-[5px]" />
+                </ButtonComponent>
+              </Link>
               <Link href="https://github.com/aliflikescoding" target="_">
                 <ButtonComponent type="secondary">
                   View Github <FaGithub className="inline-block ml-[5px]" />
                 </ButtonComponent>
               </Link>
-            </div>
           </motion.div>
         </div>
       </CustomContainer>
