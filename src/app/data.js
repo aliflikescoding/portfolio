@@ -1,57 +1,51 @@
 export const freeLanceProjects = [
   {
-    id: 0,
-    title: "Shopping Cart Project",
-    used: ["react", "tailwindCSS", "reactRouting", "chakraUI"],
+    id: 1,
+    title: "Desa Wisata Punjulharjo Website",
+    used: [
+      "Figma",
+      "React.js",
+      "Tailwind CSS",
+      "ShadcnUI",
+      "Next.js",
+      "Git",
+      "GitHub",
+    ],
     description:
-      "An assigned project from The Odin Project in this project you are tasked to a basic ecomerce website using the fakestore API, having mutiple pages, and having a shopping cart in the e comerce app. In this project I learned about pulling data from an API, using the useEffect react hook, react routing, using the contextAPI, and styling the side using ChakraUI and TailwindCSS",
-    imageLink: "/project-thumbnails/shoppingcartpict.png",
-    liveLink: "https://shopping-cart-project-inky.vercel.app/",
-    codeLink: "https://github.com/aliflikescoding/react-shopping-cart",
+      "For a commissioned project, I developed seven pages, including a landing page with carousels, form with validation, login, register, admin with filtering, users, and payment pages. I styled the site using Tailwind CSS and ShadcnUI, designed the layout in Figma, used TypeScript for type safety, and managed version control with Git and GitHub.",
+    imageLink: "/project-thumbnails/desawisata.png",
+    liveLink: "https://desawisatapunjulharjo.com/",
+    codeLink: "/notavailable",
     slugLink: "#",
   },
   {
     id: 1,
-    title: "React Blood Bank",
-    used: ["react", "tailwindCSS", "reactRouting", "chakraUI"],
+    title: "University Class Bot Booker",
+    used: [
+      "Figma",
+      "React.js",
+      "Tailwind CSS",
+      "ShadcnUI",
+      "Next.js",
+      "Git",
+      "GitHub",
+    ],
+    description:
+      "For a commissioned project, I developed seven key pages, starting with a landing page featuring carousels, followed by a form page with complete frontend validation and dropdowns. Additionally, I created a login page, register page, an admin page for running scripts with filtering options, a users page, and a payment page for transactions. The project was styled using Tailwind CSS and ShadcnUI. I designed the layout and wireframes in Figma, implemented everything with TypeScript for type safety, and used Git and GitHub for version control.",
+    imageLink: "/project-thumbnails/siakking.png",
+    liveLink: "https://siakking.com/",
+    codeLink: "/notavailable",
+    slugLink: "#",
+  },
+  {
+    id: 3,
+    title: "Blood Bank",
+    used: ["react", "tailwindCSS", "react routing", "chakraUI"],
     description:
       "A commitioned work that I did converting figma designes to a live code version using ReactJS, ChartJS, ChakraUI, and tailwind css, In this project I used basic routing using react router. In this project I learned about processing data using chartJS and ChakraUI, Basic routing using react route, and styling using Tailwind CSS",
     imageLink: "/project-thumbnails/bloodbank.png",
     liveLink: "https://blood-bank-project-inky.vercel.app/",
     codeLink: "https://github.com/aliflikescoding/react-blood-bank",
-    slugLink: "#",
-  },
-  {
-    id: 2,
-    title: "Vanilla Battleship",
-    used: ["HTML", "SASS", "Javascript", "JEST"],
-    description:
-      "you An assigned project from The Odin Project in this project you are assgined to make a clasic battleship game using html, css, and javasript but I used sass isntead. you arer assigned to use OOP to make the ships and JEST to test the project. In this project I learned about advaced OOP in javascript unit testing javascript logic using JEST",
-    imageLink: "/project-thumbnails/battleship.png",
-    liveLink: "https://aliflikescoding.github.io/vanilla-battleship/",
-    codeLink: "https://github.com/aliflikescoding/vanilla-battleship",
-    slugLink: "#",
-  },
-  {
-    id: 3,
-    title: "Vanilla To Do List",
-    used: ["HTML", "CSS", "Javascript"],
-    description:
-      "An assigned project from TOP (the odin project) course. You are tasked to build a To Do List App using vanilla html, css, and Javasript. In this project I learend about OOP intensively in javascript",
-    imageLink: "/project-thumbnails/todolist.png",
-    liveLink: "https://aliflikescoding.github.io/vanilla-to-do-list/",
-    codeLink: "https://github.com/aliflikescoding/vanilla-to-do-list",
-    slugLink: "#",
-  },
-  {
-    id: 4,
-    title: "Chat App - Landing Page",
-    used: ["Webflow", "Web Design"],
-    description:
-      "This is a homepage design and build for a concept project – a chat application. I designed the page first then built a responsive web page using Webflow.",
-    imageLink: "/project-thumbnails/webflowchatapp.png",
-    liveLink: "https://aliflikescoding-team-app.webflow.io/",
-    codeLink: "#",
     slugLink: "#",
   },
 ];
@@ -72,6 +66,36 @@ export const personalOrCourse = [
 
 export const featuredProjects = [
   {
+    id: 5,
+    title: "Desa Wisata Punjulharjo Website",
+    used: [
+      "Figma",
+      "React.js",
+      "Tailwind CSS",
+      "ShadcnUI",
+      "Next.js",
+      "Git",
+      "GitHub",
+    ],
+    description:
+      "For a commissioned project, I created the full page from wireframe to design and developed eight key pages: a landing page, about page, destinations page, videos page, blog page, admin page, login page, and a location description page with a carousel. The site was styled with Tailwind CSS and ShadcnUI, and I built over ten reusable React components. I designed the layout in Figma and implemented dynamic routing with Next.js. Git and GitHub were used for version control.",
+    imageLink: "/project-thumbnails/desawisata.png",
+    liveLink: "https://desawisatapunjulharjo.com/",
+    codeLink: "/notavailable",
+    slugLink: "#",
+  },
+  {
+    id: 1,
+    title: "Blood Bank",
+    used: ["react", "tailwindCSS", "react routing", "chakraUI"],
+    description:
+      "A commitioned work that I did converting figma designes to a live code version using ReactJS, ChartJS, ChakraUI, and tailwind css, In this project I used basic routing using react router. In this project I learned about processing data using chartJS and ChakraUI, Basic routing using react route, and styling using Tailwind CSS",
+    imageLink: "/project-thumbnails/bloodbank.png",
+    liveLink: "https://blood-bank-project-inky.vercel.app/",
+    codeLink: "https://github.com/aliflikescoding/react-blood-bank",
+    slugLink: "#",
+  },
+  {
     id: 0,
     title: "Shopping Cart Project",
     used: ["react", "tailwindCSS", "reactRouting", "chakraUI"],
@@ -83,17 +107,6 @@ export const featuredProjects = [
     slugLink: "#",
   },
   {
-    id: 1,
-    title: "React Blood Bank",
-    used: ["react", "tailwindCSS", "reactRouting", "chakraUI"],
-    description:
-      "A commitioned work that I did converting figma designes to a live code version using ReactJS, ChartJS, ChakraUI, and tailwind css, In this project I used basic routing using react router. In this project I learned about processing data using chartJS and ChakraUI, Basic routing using react route, and styling using Tailwind CSS",
-    imageLink: "/project-thumbnails/bloodbank.png",
-    liveLink: "https://blood-bank-project-inky.vercel.app/",
-    codeLink: "https://github.com/aliflikescoding/react-blood-bank",
-    slugLink: "#",
-  },
-  {
     id: 2,
     title: "Vanilla Battleship",
     used: ["HTML", "SASS", "Javascript", "JEST"],
@@ -102,17 +115,6 @@ export const featuredProjects = [
     imageLink: "/project-thumbnails/battleship.png",
     liveLink: "https://aliflikescoding.github.io/vanilla-battleship/",
     codeLink: "https://github.com/aliflikescoding/vanilla-battleship",
-    slugLink: "#",
-  },
-  {
-    id: 3,
-    title: "Vanilla To Do List",
-    used: ["HTML", "CSS", "Javascript"],
-    description:
-      "An assigned project from TOP (the odin project) course. You are tasked to build a To Do List App using vanilla html, css, and Javasript. In this project I learend about OOP intensively in javascript",
-    imageLink: "/project-thumbnails/todolist.png",
-    liveLink: "https://aliflikescoding.github.io/vanilla-to-do-list/",
-    codeLink: "https://github.com/aliflikescoding/vanilla-to-do-list",
     slugLink: "#",
   },
   {
