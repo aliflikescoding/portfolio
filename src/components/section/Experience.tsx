@@ -33,7 +33,7 @@ const Experience = () => {
                 position={exp.position}
                 companyName={exp.companyName}
                 companyLink={exp.companyLink}
-                descBullets={exp.descBullets}
+                description={exp.description}
                 used={exp.used}
               />
             ))}
@@ -55,7 +55,7 @@ const Experience = () => {
                 position={exp.position}
                 companyName={exp.companyName}
                 companyLink={exp.companyLink}
-                descBullets={exp.descBullets}
+                description={exp.description}
                 used={exp.used}
               />
             ))}
