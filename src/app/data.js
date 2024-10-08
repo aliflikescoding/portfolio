@@ -50,6 +50,46 @@ export const freeLanceProjects = [
   },
 ];
 
+export const workProjects = [
+  {
+    id: 2,
+    title: "iGate2024 - Website",
+    used: [
+      "React.js",
+      "Typescript",
+      "Tailwind CSS",
+      "Next.js",
+      "Git",
+      "GitHub",
+    ],
+    description:
+      "The work I did for iGate2024 - See experience section for more info",
+    imageLink: "/project-thumbnails/igate.png",
+    liveLink: "https://igate.love/",
+    codeLink: "/notavailable",
+    slugLink: "#",
+  },
+  {
+    id: 1,
+    title: "HMIF UNDIP - Website",
+    used: [
+      "React.js",
+      "Javascript",
+      "Tailwind CSS",
+      "SASS",
+      "Next.js",
+      "Git",
+      "GitHub",
+    ],
+    description:
+      "The work I did for HMIF UNDIP - See experience section for more info",
+    imageLink: "/project-thumbnails/hmif.png",
+    liveLink: "https://hmif.codes/",
+    codeLink: "/notavailable",
+    slugLink: "#",
+  },
+];
+
 // cnt 7
 export const personalOrCourse = [
   {

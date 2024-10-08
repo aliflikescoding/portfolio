@@ -6,7 +6,7 @@ import ProjectCard from "@/components/ProjectsCard";
 import { motion } from "framer-motion";
 import { FaHome } from "react-icons/fa";
 import Link from "next/link";
-import { freeLanceProjects, personalOrCourse } from "../data";
+import { workProjects, freeLanceProjects, personalOrCourse } from "../data";
 
 export default function Projects() {
   const variants = {
@@ -45,6 +45,31 @@ export default function Projects() {
                 >
                   <FaHome className="mr-[10px]" /> Home
                 </Link>
+            </div>
+            <div className="pb-[30px] sm:pb-[45px]">
+              <motion.h1
+                initial="hidden"
+                whileInView="visible"
+                variants={variants}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="font-bold font-ubuntu text-[48px] sm:text-[48px] lining-[64px]"
+              >
+                Work Projects
+              </motion.h1>
+              <div className="mt-8 flex flex-col gap-8">
+                {workProjects.map((project) => (
+                  <ProjectCard
+                    key={project.id}
+                    title={project.title}
+                    used={project.used}
+                    description={project.description}
+                    liveLink={project.liveLink}
+                    codeLink={project.codeLink}
+                    slugLink={project.slugLink}
+                    imageLink={project.imageLink}
+                  />
+                ))}
+              </div>
             </div>
             <div className="pb-[30px] sm:pb-[45px]">
               <motion.h1
