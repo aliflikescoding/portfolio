@@ -6,12 +6,12 @@ import ProjectCard from "@/components/ProjectsCard";
 import { motion } from "framer-motion";
 import { FaHome } from "react-icons/fa";
 import Link from "next/link";
-import { workProjects, freeLanceProjects, personalOrCourse } from "../data";
+import { workProjects, freeLanceProjects, personalOrCourse, uniProjects } from "../data";
 
 export default function Projects() {
   const variants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },   
+    visible: { opacity: 1, y: 0 },
   };
 
   return (
@@ -20,8 +20,8 @@ export default function Projects() {
         <CustomContainer>
           <div className="py-[15vh] sm:py-[20vh]">
             <div className="flex justify-start pt-[30px] sm:pt-[45px]">
-            <Link
-                  className="
+              <Link
+                className="
                   p-2
                   text-customBlack 
                   bg-customWhite
@@ -41,10 +41,10 @@ export default function Projects() {
                   items-center
                   border-2
                 border-customBlack font-roboto"
-                  href="/"
-                >
-                  <FaHome className="mr-[10px]" /> Home
-                </Link>
+                href="/"
+              >
+                <FaHome className="mr-[10px]" /> Home
+              </Link>
             </div>
             <div className="pb-[30px] sm:pb-[45px]">
               <motion.h1
@@ -83,6 +83,31 @@ export default function Projects() {
               </motion.h1>
               <div className="mt-8 flex flex-col gap-8">
                 {freeLanceProjects.map((project) => (
+                  <ProjectCard
+                    key={project.id}
+                    title={project.title}
+                    used={project.used}
+                    description={project.description}
+                    liveLink={project.liveLink}
+                    codeLink={project.codeLink}
+                    slugLink={project.slugLink}
+                    imageLink={project.imageLink}
+                  />
+                ))}
+              </div>
+            </div>
+            <div className="pb-[30px] sm:pb-[45px]">
+              <motion.h1
+                initial="hidden"
+                whileInView="visible"
+                variants={variants}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="font-bold font-ubuntu text-[48px] sm:text-[48px] lining-[64px]"
+              >
+                University Projects
+              </motion.h1>
+              <div className="mt-8 flex flex-col gap-8">
+                {uniProjects.map((project) => (
                   <ProjectCard
                     key={project.id}
                     title={project.title}

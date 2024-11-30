@@ -90,6 +90,27 @@ export const workProjects = [
   },
 ];
 
+export const uniProjects = [
+  {
+    id: 2,
+    title: "Farm Count Game",
+    used: [
+      "React.js",
+      "Typescript",
+      "Tailwind CSS",
+      "Next.js",
+      "Git",
+      "GitHub",
+    ],
+    description:
+      "This project is for the university course human computer interaction (Interaksi Manusia Komputer) which I took in the 3rd semester at Diponegoro University. You are tasked with making a kids game for kindergarteners. We had to use 8 out of 10 of the design principles Usability Heuristics for User Interface Design by Jakob Nielsen. We had to also get Users to Give feedback on the game and make modifications based on that.",
+    imageLink: "/project-thumbnails/farm-count.png",
+    liveLink: "https://farm-count.vercel.app/",
+    codeLink: "https://github.com/aliflikescoding/imk-game",
+    slugLink: "#",
+  },
+];
+
 // cnt 7
 export const personalOrCourse = [
   {
