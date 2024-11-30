@@ -317,12 +317,12 @@ export const featuredProjects = [
 export const experience = [
   {
     id: 0,
-    timeline: "Sep 2024 - Present",
+    timeline: "Sep 2024 - Oct 2024",
     position: "Frontend Developer",
     companyName: "iGate2024",
     companyLink: "https://igate.love/",
     description:
-      "So far, I’ve developed only the landing page, but it’s packed with animations. I’ve used Tailwind CSS, React.js, and TypeScript, along with Git and GitHub for version control. I’ve also been working closely with the design team and the UI/UX team, providing them with assistance where needed. Once I’ve completed more of the project, I’ll provide updates on what I’ve worked on.",
+      "I’ve developed the landing page that is packed with animations, Front-end form validation, Made custom animation for payment, used Tailwind CSS, React.js, TypeScript and Javascript, along with Git and GitHub for version control. Worked closely with the design team and the UI/UX team, providing them with assistance where needed where I created custom SVG’s for the website.",
     used: ["react", "typescript","tailwindCSS", "git", "github"],
   },
   {

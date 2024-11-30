@@ -44,12 +44,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         rounded-3xl 
         shadow-[7px_7px_0_rgb(0,0,0)] 
         transition-all 
-        hover:shadow-none 
-        hover:translate-x-2 
-        hover:translate-y-2
-        active:translate-x-2 
-        active:translate-y-2 
-        active:shadow-none
         capitalize
         bg-customYellow
         border-2
