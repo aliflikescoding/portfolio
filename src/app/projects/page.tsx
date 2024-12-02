@@ -1,5 +1,7 @@
 "use client";
 
+import { useEffect, useRef } from "react";
+import Lenis from "@studio-freight/lenis";
 import Layout from "@/components/Layout";
 import CustomContainer from "@/components/custom/customContainer";
 import ProjectCard from "@/components/ProjectsCard";
@@ -9,10 +11,32 @@ import Link from "next/link";
 import { workProjects, freeLanceProjects, personalOrCourse, uniProjects } from "../data";
 
 export default function Projects() {
+  const lenisRef = useRef<Lenis | null>(null);
+
   const variants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 },
   };
+
+  useEffect(() => {
+    // Initialize Lenis
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Custom easing function
+    });
+    lenisRef.current = lenis;
+
+    const raf = (time: number) => {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    };
+    requestAnimationFrame(raf);
+
+    // Cleanup on component unmount
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
 
   return (
     <Layout>
