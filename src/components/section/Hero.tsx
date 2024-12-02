@@ -100,7 +100,7 @@ const Hero = () => {
               <Link href="mailto:alif.likes.coding@gmail.com">
                 <ButtonComponent type="primary">get in touch</ButtonComponent>
               </Link>
-              <Link href="/resume.pdf" target="_" download="Alif Wibowo Resume">
+              <Link href="/Alif-Resume.pdf" target="_" download="Alif Wibowo Resume">
                 <ButtonComponent type="secondary">get resume</ButtonComponent>
               </Link>
             </motion.div>
