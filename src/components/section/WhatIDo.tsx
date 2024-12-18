@@ -73,11 +73,7 @@ const WhatIDo = () => {
               variants={variants}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              I build websites in Webflow, React.js, Tailwind CSS, Sass, and
-              Next.js to create responsive, powerful, and fully custom websites.
-              With these tools, I offer advanced development capabilities
-              alongside Webflow’s simple Content Editor, allowing your team to
-              quickly and easily manage website content.
+              I a develop the frontend using various tools and frameworks I have a strong foundation in HTML, CSS, and Javascript so weather you wan&apos;t me to build your website in ReactJS with NextJS, Typescript, or whatever it may be, I am confident I would be able to do so.
             </motion.p>
           </div>
           <div className="pt-[30px]">
