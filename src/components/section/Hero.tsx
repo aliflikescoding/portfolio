@@ -111,7 +111,7 @@ const Hero = () => {
       {/* Hero SVGs with scroll-based movement */}
       <motion.div
         style={{ x: xMove1 }}
-        className="z-[-10] absolute right-[50%] md:right-[30%] top-[14%]"
+        className="z-[-10] hidden sm:block absolute right-[50%] md:right-[30%] top-[14%]"
         initial={{ x: 1000, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
@@ -127,7 +127,7 @@ const Hero = () => {
       </motion.div>
       <motion.div
         style={{ x: xMove2 }}
-        className="z-[-10] absolute right-[29%] top-[30%]"
+        className="z-[-10] hidden sm:block absolute right-[29%] top-[30%]"
         initial={{ x: 1100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
@@ -143,7 +143,7 @@ const Hero = () => {
       </motion.div>
       <motion.div
         style={{ x: xMove3 }}
-        className="z-[-10] absolute right-[75%] sm:right-[35%] top-[40%]"
+        className="z-[-10] hidden sm:block absolute right-[75%] sm:right-[35%] top-[40%]"
         initial={{ x: 1200, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
@@ -159,7 +159,7 @@ const Hero = () => {
       </motion.div>
       <motion.div
         style={{ x: xMove4 }}
-        className="z-[-10] absolute right-[40%] top-[52%]"
+        className="z-[-10] hidden sm:block absolute right-[40%] top-[52%]"
         initial={{ x: 1300, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
@@ -175,7 +175,7 @@ const Hero = () => {
       </motion.div>
       <motion.div
         style={{ x: xMove5 }}
-        className="z-[-10] absolute right-[80%] md:right-[27%] top-[58%]"
+        className="z-[-10] hidden sm:block absolute right-[80%] md:right-[27%] top-[58%]"
         initial={{ x: 1400, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
@@ -192,7 +192,7 @@ const Hero = () => {
 
       <motion.div
         style={{ x: xMove6 }}
-        className="z-[-10] absolute right-[35%] top-[85%] md:top-[65%]"
+        className="z-[-10] hidden sm:block absolute right-[35%] top-[85%] md:top-[65%]"
         initial={{ x: 1500, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
@@ -208,7 +208,7 @@ const Hero = () => {
       </motion.div>
       <motion.div
         style={{ x: xMove7 }}
-        className="z-[-10] absolute right-[10%] md:right-[15%] top-[60%]"
+        className="z-[-10] hidden sm:block absolute right-[10%] md:right-[15%] top-[60%]"
         initial={{ x: 1700, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
@@ -224,7 +224,7 @@ const Hero = () => {
       </motion.div>
       <motion.div
         style={{ x: xMove8 }}
-        className="z-[-10] absolute right-[20%] top-[17%]"
+        className="z-[-10] hidden sm:block absolute right-[20%] top-[17%]"
         initial={{ x: 1800, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
@@ -240,7 +240,7 @@ const Hero = () => {
       </motion.div>
       <motion.div
         style={{ x: xMove9 }}
-        className="z-[-10] absolute right-[12.5%] md:right-[20%] top-[40%]"
+        className="z-[-10] hidden sm:block absolute right-[12.5%] md:right-[20%] top-[40%]"
         initial={{ x: 1800, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
@@ -256,7 +256,7 @@ const Hero = () => {
       </motion.div>
       <motion.div
         style={{ x: xMove10 }}
-        className="z-[-10] absolute right-[80%] md:right-[45%] top-[10%]"
+        className="z-[-10] hidden sm:block absolute right-[80%] md:right-[45%] top-[10%]"
         initial={{ x: 1900, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
@@ -272,7 +272,7 @@ const Hero = () => {
       </motion.div>
       <motion.div
         style={{ x: xMove11 }}
-        className="z-[-10] absolute right-[70%] md:right-[40%] top-[20%]"
+        className="z-[-10] hidden sm:block absolute right-[70%] md:right-[40%] top-[20%]"
         initial={{ x: 2000, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}

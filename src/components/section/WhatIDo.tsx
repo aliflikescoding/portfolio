@@ -114,7 +114,7 @@ const WhatIDo = () => {
         </div>
       </CustomContainer>
       <motion.div
-        className="z-[-10] opacity-60 sm:opacity-80 lg:opacity-100 absolute right-[75%] sm:right-[45%] sm:top-[13%] sm:top-[15%]"
+        className="z-[-10] hidden sm:block opacity-60 sm:opacity-80 lg:opacity-100 absolute right-[75%] sm:right-[45%] sm:top-[13%] sm:top-[15%]"
         style={{ x: xMove11 }}
       >
         <Image
@@ -127,7 +127,7 @@ const WhatIDo = () => {
         />
       </motion.div>
       <motion.div
-        className="z-[-10] opacity-60 sm:opacity-80 lg:opacity-100 absolute right-[22%] top-[28%] sm:top-[30%]"
+        className="z-[-10] hidden sm:block opacity-60 sm:opacity-80 lg:opacity-100 absolute right-[22%] top-[28%] sm:top-[30%]"
         style={{ x: xMove5 }}
       >
         <Image
@@ -140,7 +140,7 @@ const WhatIDo = () => {
         />
       </motion.div>
       <motion.div
-        className="z-[-10] opacity-60 sm:opacity-80 lg:opacity-100 absolute right-[17%] top-[12%] sm:top-[15%]"
+        className="z-[-10] hidden sm:block opacity-60 sm:opacity-80 lg:opacity-100 absolute right-[17%] top-[12%] sm:top-[15%]"
         style={{ x: xMove6 }}
       >
         <Image
@@ -153,7 +153,7 @@ const WhatIDo = () => {
         />
       </motion.div>
       <motion.div
-        className="z-[-10] opacity-60 sm:opacity-80 lg:opacity-100 absolute right-[55%] sm:right-[30%] top-[35%] sm:top-[20%]"
+        className="z-[-10] hidden sm:block opacity-60 sm:opacity-80 lg:opacity-100 absolute right-[55%] sm:right-[30%] top-[35%] sm:top-[20%]"
         style={{ x: xMove7 }}
       >
         <Image
@@ -166,7 +166,7 @@ const WhatIDo = () => {
         />
       </motion.div>
       <motion.div
-        className="z-[-10] opacity-60 sm:opacity-80 lg:opacity-100 absolute right-[75%] sm:right-[39%] top-[25%] sm:top-[32%]"
+        className="z-[-10] hidden sm:block opacity-60 sm:opacity-80 lg:opacity-100 absolute right-[75%] sm:right-[39%] top-[25%] sm:top-[32%]"
         style={{ x: xMove8 }}
       >
         <Image
@@ -179,7 +179,7 @@ const WhatIDo = () => {
         />
       </motion.div>
       <motion.div
-        className="z-[-10] opacity-60 sm:opacity-80 lg:opacity-100 absolute right-[32%] top-[37%] sm:top-[40%]"
+        className="z-[-10] hidden sm:block opacity-60 sm:opacity-80 lg:opacity-100 absolute right-[32%] top-[37%] sm:top-[40%]"
         style={{ x: xMove9 }}
       >
         <Image
@@ -192,7 +192,7 @@ const WhatIDo = () => {
         />
       </motion.div>
       <motion.div
-        className="z-[-10] opacity-60 sm:opacity-80 lg:opacity-100 absolute sm:right-[45%] right-[80%] top-[50%] sm:top-[55%]"
+        className="z-[-10] hidden sm:block opacity-60 sm:opacity-80 lg:opacity-100 absolute sm:right-[45%] right-[80%] top-[50%] sm:top-[55%]"
         style={{ x: xMove10 }}
       >
         <Image
@@ -205,7 +205,7 @@ const WhatIDo = () => {
         />
       </motion.div>
       <motion.div
-        className="z-[-10] opacity-60 sm:opacity-80 lg:opacity-100 absolute right-[42%] top-[65%] sm:top-[70%]"
+        className="z-[-10] hidden sm:block opacity-60 sm:opacity-80 lg:opacity-100 absolute right-[42%] top-[65%] sm:top-[70%]"
         style={{ x: xMove1 }}
       >
         <Image
@@ -218,7 +218,7 @@ const WhatIDo = () => {
         />
       </motion.div>
       <motion.div
-        className="z-[-10] opacity-60 sm:opacity-80 lg:opacity-100 absolute right-[38%] top-[55%] sm:top-[60%]"
+        className="z-[-10] hidden sm:block opacity-60 sm:opacity-80 lg:opacity-100 absolute right-[38%] top-[55%] sm:top-[60%]"
         style={{ x: xMove2 }}
       >
         <Image
@@ -231,7 +231,7 @@ const WhatIDo = () => {
         />
       </motion.div>
       <motion.div
-        className="z-[-10] opacity-60 sm:opacity-80 lg:opacity-100 absolute right-[25%] top-[50%] sm:top-[55%]"
+        className="z-[-10] hidden sm:block opacity-60 sm:opacity-80 lg:opacity-100 absolute right-[25%] top-[50%] sm:top-[55%]"
         style={{ x: xMove3 }}
       >
         <Image
@@ -244,7 +244,7 @@ const WhatIDo = () => {
         />
       </motion.div>
       <motion.div
-        className="z-[-10] opacity-60 sm:opacity-80 lg:opacity-100 absolute right-[20%] top-[80%] sm:top-[70%]"
+        className="z-[-10] hidden sm:block opacity-60 sm:opacity-80 lg:opacity-100 absolute right-[20%] top-[80%] sm:top-[70%]"
         style={{ x: xMove4 }}
       >
         <Image

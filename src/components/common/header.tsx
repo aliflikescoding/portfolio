@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/sheet";
 import { FaInfoCircle } from "react-icons/fa";
 import { LuClipboardList } from "react-icons/lu";
-import { FaBox, FaBoxOpen } from "react-icons/fa";
+import { FaBox } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = () => {
@@ -35,7 +35,6 @@ const Header = () => {
             <NavLink link="/#about">About</NavLink>
             <NavLink link="/#experience">Experience</NavLink>
             <NavLink link="/#projects">Featured Projects</NavLink>
-            <NavLink link="/projects">Full Projects</NavLink>
           </div>
           <div className="block lg:hidden">
             <Sheet>
@@ -78,12 +77,6 @@ const Header = () => {
                       className="flex items-center text-xl font-medium shadow-[7px_7px_0_rgb(0,0,0)] p-3 bg-customWhite rounded-3xl border-2 border-customBlack"
                     >
                       <FaBox className="mr-[5px]" /> Featured Projects
-                    </Link>
-                    <Link
-                      href="/projects"
-                      className="flex items-center text-xl font-medium shadow-[7px_7px_0_rgb(0,0,0)] p-3 bg-customWhite rounded-3xl border-2 border-customBlack"
-                    >
-                      <FaBoxOpen className="mr-[5px]" /> Full Projects
                     </Link>
                   </div>
                   <SheetDescription></SheetDescription>
