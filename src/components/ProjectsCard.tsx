@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import ButtonComponent from "./contact-button";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -19,14 +21,18 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   used = [],
-  description,
+  description = "",
   liveLink,
   codeLink,
   imageLink,
 }) => {
+  const [showFull, setShowFull] = useState(false);
+  const shortDescription = description.slice(0, 100);
+  const isLong = description.length > 100;
+
   const variants = {
-    hidden: { opacity: 0, y: 20 }, // Initially hidden
-    visible: { opacity: 1, y: 0 }, // Visible state
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
   };
 
   return (
@@ -62,9 +68,18 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 <UsePill text={`${tech}`} key={index} />
               ))}
           </div>
-          <p className="max-w-[550px] text-[15px] sm:text-[18px] leading-[165%] mb-[25px]">
-            {description}
+          <p className="max-w-[550px] text-[15px] sm:text-[18px] leading-[165%] mb-[10px]">
+            {showFull ? description : shortDescription}
+            {isLong && !showFull && "..."}
           </p>
+          {isLong && (
+            <button
+              className="font-ubuntu text-xl underline mb-[25px]"
+              onClick={() => setShowFull(!showFull)}
+            >
+              {showFull ? "Read less" : "Read more"}
+            </button>
+          )}
           <div className="flex sm:flex-row flex-col gap-[15px] items-center">
             <Link href={liveLink || "#"} target="_blank">
               <ButtonComponent type="primary">

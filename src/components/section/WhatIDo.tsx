@@ -35,7 +35,7 @@ const WhatIDo = () => {
     <section ref={sectionRef} className="pb-[150px] relative overflow-hidden">
       <CustomContainer>
         <div>
-        <motion.h1
+          <motion.h1
             initial="hidden"
             whileInView="visible"
             variants={variants}
@@ -63,7 +63,7 @@ const WhatIDo = () => {
                 />
               </motion.div>
               <h2 className="font-medium font-roboto text-[32px] leading-[48px]">
-                <ScrambleText>Development</ScrambleText>
+                <ScrambleText>Develop</ScrambleText>
               </h2>
             </div>
             <motion.p
@@ -73,7 +73,11 @@ const WhatIDo = () => {
               variants={variants}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              I develop the frontend using various tools and frameworks I have a strong foundation in HTML, CSS, and Javascript so weather you wan&apos;t me to build your website in ReactJS with NextJS, Typescript, or whatever it may be, I am confident I would be able to do so.
+              I develop scalable and efficient web apps with modern
+              technologies, ensuring both the frontend and backend work
+              seamlessly. From interactive user interfaces to robust server-side
+              systems, I build fast, reliable, and high-performing applications
+              tailored to your needs.
             </motion.p>
           </div>
           <div className="pt-[30px]">
@@ -105,10 +109,9 @@ const WhatIDo = () => {
               variants={variants}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              I design beautiful and powerful websites for modern businesses.
-              Any business today needs a website that wins customers’ trust and
-              helps you do your business well. I make sure your website is up to
-              that standard.
+              I design visually stunning and impactful websites for modern
+              businesses. A strong online presence builds trust and helps your
+              business thrive. I make sure your website meets that standard.
             </motion.p>
           </div>
         </div>

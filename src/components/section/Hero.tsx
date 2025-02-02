@@ -39,10 +39,10 @@ const Hero = () => {
         <div>
           <div>
             <h1 className="font-medium uppercase font-ubuntu text-4xl  sm:text-5xl tracking-[6.24px] mb-[12px] flex md:flex-row flex-col">
-              ALIFLIKES
-              <span className="text-customBlue">
+              Alif
+              <span className="text-customBlue ml-2">
                 <Typewriter
-                  words={["Coding", "Designing", "Developing", "Repeat!"]}
+                  words={["Wibowo"]}
                   loop={0}
                   cursor
                   cursorStyle="_"
@@ -74,7 +74,7 @@ const Hero = () => {
             <div className="inline-block md:ml-[27px]">
               <h2 className="font-roboto font-normal my-2 text-[25px]  sm:text-[32px] leading-[48px]">
                 <ScrambleText>
-                  Frontend Developer and UI/UX designer.
+                  Full Stack Developer and Web Designer.
                 </ScrambleText>
               </h2>
               <motion.p
@@ -84,10 +84,11 @@ const Hero = () => {
                 variants={variants}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-                Hi, my name is Alif Wibowo. I design and build beautiful
-                websites for businesses around the globe. If you need a modern
-                and powerful website, send me an email. If we are a good fit, I
-                will give you a time and cost estimate.
+                I am a computer science student at Diponegoro University.
+                currently learning Web Development, in the future I would like
+                to explore a broad range or prospects. I am passionate about
+                learning what kind of developments are made in the tech
+                industry.
               </motion.p>
             </div>
             <motion.div
@@ -100,7 +101,11 @@ const Hero = () => {
               <Link href="mailto:alif.likes.coding@gmail.com">
                 <ButtonComponent type="primary">get in touch</ButtonComponent>
               </Link>
-              <Link href="/resume-alif-wibowo.pdf" target="_" download="Alif Wibowo Resume">
+              <Link
+                href="/resume-alif-wibowo.pdf"
+                target="_"
+                download="Alif Wibowo Resume"
+              >
                 <ButtonComponent type="secondary">get resume</ButtonComponent>
               </Link>
             </motion.div>

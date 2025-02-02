@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import UsePill from "./UsePill";
 import Link from "next/link";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 interface ExperienceTextProp {
   timeline: string;
@@ -50,16 +51,20 @@ const ExperienceText: React.FC<ExperienceTextProp> = ({
           <h2 className="font-normal text-[20px] sm:text-[24px] mb-[8px] capitalize">
             {timeline}
           </h2>
-          <h2 className="font-normal text-[20px] sm:text-[24px]">
-            {position} -{" "}
-            {companyLink ? (
-              <Link className="underline" target="_" href={companyLink}>
-                {companyName}
-              </Link>
-            ) : (
-              <span>{companyName}</span>
-            )}
-          </h2>
+          <h2 className="font-normal text-[25px] sm:text-[30px]">{position}</h2>
+          {companyLink ? (
+            <Link
+              className="flex max-w-fit text-[15px] sm:text-[20px] items-center gap-1 group hover:text-customBlue relative"
+              target="_blank"
+              href={companyLink}
+            >
+              <p>{companyName}</p>
+              <FaArrowRightLong className="group-hover:ml-2 transition-all duration-800 ease-in-out" />
+              <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-customBlue transition-all duration-800 ease-in-out group-hover:w-full"></span>
+            </Link>
+          ) : (
+            <span className="text-[20px]">{companyName}</span>
+          )}
         </div>
       </div>
       <div className="flex">
@@ -74,7 +79,9 @@ const ExperienceText: React.FC<ExperienceTextProp> = ({
           />
         </div>
         <div className="ml-[30px] my-6">
-          <p className="pl-1 font-normal opacity-75 text-[15px] sm:text-[18px] max-w-[965px] text-indent-[-0.5rem]">{description}</p>
+          <p className="pl-1 font-normal opacity-75 text-[15px] sm:text-[18px] max-w-[965px] text-indent-[-0.5rem]">
+            {description}
+          </p>
           <div className="mt-[20px]">
             <div className="flex flex-wrap gap-[5px] my-[15px]">
               {used.length > 0 &&

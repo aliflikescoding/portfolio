@@ -28,22 +28,40 @@ const ToolsAndSkills = () => {
             title="frontend"
             images={[
               "/frontend/reactLogo.svg",
+              "/frontend/vueLogo.svg",
+              "/frontend/nextLogo.svg",
               "/frontend/sassLogo.svg",
               "/frontend/tailwindLogo.svg",
               "/frontend/typescriptLogo.svg",
               "/frontend/javascriptLogo.svg",
               "/frontend/cssLogo.svg",
               "/frontend/htmlLogo.svg",
+              "/frontend/webflowLogo.svg",
             ]}
           />
           <SkillsOrTools
-            title="tools"
+            title="backend"
             images={[
-              "tools/githubLogo.svg",
-              "tools/gitLogo.svg",
-              "tools/figmaLogo.svg",
-              "tools/webflowLogo.svg",
+              "backend/node.svg",
+              "backend/express.svg",
+              "backend/postgresql.svg",
+              "backend/prisma.svg",
+              "backend/nextLogo.svg",
+              "backend/webflowLogo.svg",
             ]}
+          />
+          <SkillsOrTools
+            title="Version Control & Collaboration"
+            images={[
+              "colab/githubLogo.svg",
+              "colab/gitLogo.svg",
+              "colab/slack.svg",
+              "colab/discord.svg",
+            ]}
+          />
+          <SkillsOrTools
+            title="Design & Prototyping"
+            images={["design/figmaLogo.svg", "design/canva.svg"]}
           />
         </div>
       </CustomContainer>

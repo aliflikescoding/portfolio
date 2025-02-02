@@ -337,6 +337,29 @@ export const featuredProjects = [
 
 export const experience = [
   {
+    id: 2,
+    timeline: "Jan 2024 - Feb 2024",
+    position: "Full Stack Developer",
+    companyName:
+      "Ministry of Communication and Information of the Republic of Indonesia",
+    companyLink: "https://www.komdigi.go.id/",
+    description:
+      "I utilized Prisma ORM with Express to streamline database queries in PostgreSQL, enhancing development efficiency and database interaction. For file handling, I integrated Multer and Node's file system module to enable seamless file uploading capabilities. On the backend, I developed a robust REST API using Express and Node.js, implementing throttling, CORS, and session handling with JWT and cookies to ensure security and scalability. Additionally, I designed and implemented an admin panel on the frontend, allowing for easy data management and updates. The frontend was built using Next.js, leveraging features like server-side rendering (SSR) and API routes, and styled with Tailwind CSS to create visually appealing and responsive pages, including landing pages, about sections, blogs, and more.",
+    used: [
+      "express.js",
+      "figma",
+      "git",
+      "github",
+      "javascript",
+      "next.js",
+      "node.js",
+      "postgresql",
+      "prisma orm",
+      "react",
+      "tailwindCSS",
+    ],
+  },
+  {
     id: 0,
     timeline: "Sep 2024 - Oct 2024",
     position: "Frontend Developer",
@@ -344,19 +367,28 @@ export const experience = [
     companyLink: "https://igate.love/",
     description:
       "I’ve developed the landing page that is packed with animations, Front-end form validation, Made custom animation for payment, used Tailwind CSS, React.js, TypeScript and Javascript, along with Git and GitHub for version control. Worked closely with the design team and the UI/UX team, providing them with assistance where needed where I created custom SVG’s for the website.",
-    used: ["react", "typescript","tailwindCSS", "git", "github"],
+    used: ["git", "github", "next.js", "react", "tailwindCSS", "typescript"],
   },
   {
     id: 1,
-    timeline: "march 2024 - june 2024",
+    timeline: "March 2024 - June 2024",
     position: "Frontend Developer",
     companyName: "HMIF UNDIP",
     companyLink: "https://www.linkedin.com/company/hmif-undip/mycompany/",
     description:
       "I developed three key pages: the first is a landing page, the second includes a fully functional form with frontend validation that sends data to the backend and includes OTP validation, and the third is a data display page with filtering options. I styled two pages using SASS (scss), one with Tailwind CSS, and another with Chakra UI. Additionally, I styled a login page and the admin panel. I created over five reusable React components, collaborated with a team of four, and utilized Git and GitHub throughout the project.",
-    used: ["react", "SASS", "tailwindCSS", "javascript", "chakraUI", "git", "github"],
+    used: [
+      "SASS",
+      "git",
+      "github",
+      "javascript",
+      "next.js",
+      "react",
+      "tailwindCSS",
+    ],
   },
 ];
+
 
 export const personalFreelance = [
   {

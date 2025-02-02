@@ -42,7 +42,7 @@ const SkillsOrTools: React.FC<SkillsOrToolsProps> = ({ title, images }) => {
               width="0"
               height="0"
               sizes="100vw"
-              className="w-auto h-auto"
+              className="w-auto max-w-[70px] h-auto"
             />
           ))}
         </motion.div>

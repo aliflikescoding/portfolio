@@ -1,6 +1,5 @@
 import React from "react";
 import CustomContainer from "../custom/customContainer";
-import Image from "next/image";
 import Link from "next/link";
 import NavLink from "../NavLink";
 import {
@@ -22,14 +21,9 @@ const Header = () => {
       <CustomContainer>
         <div className="py-[30px] flex justify-between items-center ">
           <Link href="/">
-            <Image
-              src="/logo.svg"
-              alt="logo"
-              width="0"
-              height="0"
-              sizes="100vw"
-              className="w-[125px] lg:w-[150px] h-auto"
-            />
+            <h1 className="font-medium uppercase font-ubuntu text-2xl  sm:text-3xl tracking-[6.24px]">
+              Alif Wibowo
+            </h1>
           </Link>
           <div className="hidden lg:flex gap-[45px]">
             <NavLink link="/#about">About</NavLink>
@@ -46,18 +40,11 @@ const Header = () => {
               <SheetContent side="top" className="bg-customCream">
                 <SheetHeader>
                   <SheetTitle>
-                    <div>
-                      <Link href="/">
-                        <Image
-                          src="/logo.svg"
-                          alt="logo"
-                          width="0"
-                          height="0"
-                          sizes="100vw"
-                          className="w-[75px] h-auto"
-                        />
-                      </Link>
-                    </div>
+                    <Link href="/">
+                      <h1 className="font-medium uppercase font-ubuntu text-xl tracking-[6.24px]">
+                        Alif Wibowo
+                      </h1>
+                    </Link>
                   </SheetTitle>
                   <div className="flex flex-col p-[7.5vh] gap-5 mx-auto">
                     <Link
