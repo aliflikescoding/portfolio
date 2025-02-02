@@ -341,7 +341,7 @@ export const experience = [
     timeline: "Jan 2024 - Feb 2024",
     position: "Full Stack Developer",
     companyName:
-      "Ministry of Communication and Information of the Republic of Indonesia",
+      "Komdigi - Indonesia",
     companyLink: "https://www.komdigi.go.id/",
     description:
       "I utilized Prisma ORM with Express to streamline database queries in PostgreSQL, enhancing development efficiency and database interaction. For file handling, I integrated Multer and Node's file system module to enable seamless file uploading capabilities. On the backend, I developed a robust REST API using Express and Node.js, implementing throttling, CORS, and session handling with JWT and cookies to ensure security and scalability. Additionally, I designed and implemented an admin panel on the frontend, allowing for easy data management and updates. The frontend was built using Next.js, leveraging features like server-side rendering (SSR) and API routes, and styled with Tailwind CSS to create visually appealing and responsive pages, including landing pages, about sections, blogs, and more.",
